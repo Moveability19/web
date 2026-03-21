@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | MovEability</title>
+    <meta name="description" content="Book a pediatric physiotherapy appointment with MovEability and continue directly on WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+    <header class="site-header page-header" id="siteHeader">
+        <div class="container">
+            <div class="header-shell">
+                <a href="index.html" class="logo" aria-label="MovEability home">
+                    <span>MovE<span>ability</span></span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="about.html" data-nav="about">About</a></li>
+                    <li><a href="services.html" data-nav="services">Services</a></li>
+                    <li><a href="conditions.html" data-nav="conditions">Conditions</a></li>
+                    <li><a href="contact.html" data-nav="contact" class="nav-cta">Book Appointment</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-copy fade-in">
+                    <div class="section-label">
+                        <span class="eyebrow-dot"></span>
+                        Contact
+                    </div>
+                    <h1 class="section-heading">Start the movement journey with confidence.</h1>
+                    <p class="section-copy">Request an assessment directly and continue on WhatsApp for a fast response from the MovEability team.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-shell contact-shell fade-in">
+                    <div class="contact-grid">
+                        <div class="contact-stack">
+                            <div class="contact-card">
+                                <h3>MovEability Clinic</h3>
+                                <ul class="contact-list">
+                                    <li>Phone: +91 7028645898</li>
+                                    <li>Location: Mumbai, India</li>
+                                    <li>Email: moveability@hotmail.com</li>
+                                    <li>Open: 10:00 AM - 7:00 PM</li>
+                                </ul>
+                            </div>
+                            <div class="contact-info-card">
+                                <div class="section-label">
+                                    <span class="eyebrow-dot"></span>
+                                    Visit Us
+                                </div>
+                                <div class="contact-mini-map" aria-label="Clinic location map">
+                                    <iframe
+                                        title="MovEability clinic location map"
+                                        src="https://www.google.com/maps?q=Bisleri%20Store%20Koldongri%20Sahar%20Road%20Andheri%20East%20Mumbai&z=16&output=embed"
+                                        loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                                <p class="contact-address">
+                                    Bisleri Store, Koldongri, Sahar Road, Andheri East, Mumbai, Maharashtra
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-form">
+                            <h3>Request an appointment</h3>
+                            <p>Share a few details and continue directly on WhatsApp for a fast response.</p>
+                            <form id="bookingForm">
+                                <div class="form-grid">
+                                    <div class="field">
+                                        <label for="parentName">Parent / Guardian Name</label>
+                                        <input id="parentName" name="parentName" type="text" placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="field">
+                                        <label for="phoneNumber">Phone Number</label>
+                                        <input id="phoneNumber" name="phoneNumber" type="tel" placeholder="Enter your number" pattern="[0-9]{10}" maxlength="10" inputmode="numeric" required>
+                                    </div>
+                                    <div class="field">
+                                        <label for="childName">Child's Name</label>
+                                        <input id="childName" name="childName" type="text" placeholder="Enter child's name" required>
+                                    </div>
+                                    <div class="field">
+                                        <label for="childAge">Child's Age</label>
+                                        <input id="childAge" name="childAge" type="text" placeholder="Months / years" required>
+                                    </div>
+                                    <div class="field">
+                                        <label for="concern">Primary Concern</label>
+                                        <select id="concern" name="concern" required>
+                                            <option value="">Select a concern</option>
+                                            <option>Delayed milestones</option>
+                                            <option>Neurological rehabilitation</option>
+                                            <option>Balance / posture / coordination</option>
+                                            <option>Gait or walking concerns</option>
+                                            <option>Neonatal / infant physiotherapy</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <label for="programInterest">Program of Interest</label>
+                                        <select id="programInterest" name="programInterest">
+                                            <option value="">Select a program</option>
+                                            <option>Early Intervention Program</option>
+                                            <option>Neurodevelopmental Rehabilitation</option>
+                                            <option>Functional Movement Training</option>
+                                            <option>Performance & Participation</option>
+                                        </select>
+                                    </div>
+                                    <div class="field full">
+                                        <label for="message">Tell us more</label>
+                                        <textarea id="message" name="message" placeholder="Share your child's concern, diagnosis, or goals"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-main form-submit">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    Continue on WhatsApp
+                                </button>
+                                <p class="form-note">You can also call directly on <strong>7028645898</strong>.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-shell">
+            <div>
+                <strong>MovEability</strong>
+                <p>Redefining pediatric movement through expertise, warmth, and child-centered care.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <a class="wa-bubble" href="https://wa.me/917028645898?text=Hello%20MovEability,%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <div class="modal" id="successModal" aria-hidden="true">
+        <div class="modal-card">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>Opening WhatsApp</h3>
+            <p>Your child's details are ready. If WhatsApp does not open automatically, use the button below.</p>
+            <div class="modal-actions">
+                <a href="#" id="waRedirectLink" class="btn-main" target="_blank" rel="noopener">Open WhatsApp</a>
+                <button type="button" class="btn-secondary" id="closeModal">Stay on Website</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
